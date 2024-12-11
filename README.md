@@ -49,7 +49,7 @@ Copy code
 factorial :: Int -> Int         -- Function to calculate factorial
 factorial 0 = 1                -- Base case: factorial of 0 is 1
 factorial n = n * factorial (n - 1)  -- Recursive case
-4. Tail Recursion 🧮
+## **4. Tail Recursion 🧮**
 Tail recursion allows for more efficient memory usage by ensuring the recursive call is the last operation.
 
 haskell
