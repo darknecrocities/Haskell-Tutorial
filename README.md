@@ -57,7 +57,7 @@ Copy code
 factorialTail :: Int -> Int -> Int   -- Tail-recursive factorial function
 factorialTail 0 acc = acc            -- Base case
 factorialTail n acc = factorialTail (n - 1) (n * acc)  -- Recursive case
-5. Simulating Object-Oriented Concepts in Haskell 🏎️
+## 5. Simulating Object-Oriented Concepts in Haskell 🏎️ ##
 Although Haskell isn't object-oriented, we can simulate OOP features like classes and inheritance using data types and type classes.
 
 haskell
@@ -74,7 +74,7 @@ main :: IO ()
 main = do
     let myCar = Car "Toyota" "Corolla"  
     putStrLn (start myCar)  
-6. Data Structures 🧩
+## 6. Data Structures 🧩
 Linked List:
 A linked list is a data structure where each element points to the next.
 
@@ -99,7 +99,7 @@ Copy code
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving Show
 tree :: Tree Int
 tree = Node 1 (Node 2 EmptyTree EmptyTree) (Node 3 EmptyTree EmptyTree)
-7. Advanced Concepts 🚀
+## 7. Advanced Concepts 🚀
 Monads:
 Monads help in handling side effects in functional programming.
 
@@ -133,8 +133,8 @@ main = do
 
 Sure! Here's a more entertaining, engaging version of the Haskell advanced tutorial, just like in your README style:
 
-Haskell: The Magic of Pure Functionality! (Advanced Tutorial - Part 2) 🎩✨
-1. Type Classes: The Shape-Shifters of Haskell 🦸‍♂️🦸‍♀️
+## Haskell: The Magic of Pure Functionality! (Advanced Tutorial - Part 2) 🎩✨
+## 1. Type Classes: The Shape-Shifters of Haskell 🦸‍♂️🦸‍♀️
 Type classes are like Haskell's superheroes—they can transform various types into something more useful. They're like interfaces in object-oriented programming, but much cooler! 🚀
 
 Let’s define the ToString class, where any type that wants to be converted to a string can join the party.
@@ -163,7 +163,7 @@ haskell
 Copy code
 printToString :: ToString a => a -> IO ()
 printToString x = putStrLn (toString x)
-2. Monads: The Cool Sidekick for Handling Side Effects 🤖💥
+## 2. Monads: The Cool Sidekick for Handling Side Effects 🤖💥
 Monads are like the super cool sidekick who helps you deal with side effects and keeps things tidy in the world of pure functions. In fact, they’re pretty good at it! Let’s meet some of them:
 
 The Maybe Monad: The "Will It or Won't It?" Sidekick
@@ -192,7 +192,7 @@ main = do
     putStrLn "What is your name?"
     name <- getLine
     putStrLn ("Hello, " ++ name)
-3. Higher-Order Functions: The Wizards of Flexibility 🧙‍♂️🧙‍♀️
+## 3. Higher-Order Functions: The Wizards of Flexibility 🧙‍♂️🧙‍♀️
 Want to make your code more magical? Higher-order functions are like spellbooks that let you pass functions as arguments or even return functions! 🧪✨
 
 Map, Filter, and Fold: The Trio of Awesomeness
@@ -217,7 +217,7 @@ filterEven xs = filter isEven xs
 
 sumList :: [Int] -> Int
 sumList xs = foldl (+) 0 xs
-4. Recursion and Tail Recursion: The Never-Ending Story 📚🔄
+## 4. Recursion and Tail Recursion: The Never-Ending Story 📚🔄
 In Haskell, recursion isn’t just an option—it’s the way to do things! Think of it like a story that keeps going... and going... and going. And for the true heroes—tail recursion is here to save you from the dreaded stack overflow.
 
 The Classic Factorial Function: Recursion at Its Finest
@@ -235,7 +235,7 @@ factorialTail n = factorialHelper n 1
     where
         factorialHelper 0 acc = acc
         factorialHelper n acc = factorialHelper (n - 1) (n * acc)
-5. Data Structures: Let’s Build Stuff 🏗️
+## 5. Data Structures: Let’s Build Stuff 🏗️
 Haskell has some amazing data structures, and Linked Lists are one of the coolest. Let’s craft a linked list and implement some useful functions!
 
 The Mighty Linked List
@@ -256,7 +256,7 @@ lengthList (Node _ xs) = 1 + lengthList xs
 appendList :: a -> LinkedList a -> LinkedList a
 appendList x Empty = Node x Empty
 appendList x (Node y xs) = Node y (appendList x xs)
-6. Lazy Evaluation: The Power of Delay ⏳
+## 6. Lazy Evaluation: The Power of Delay ⏳
 In Haskell, lazy evaluation means that computations are only done when they’re needed. It’s like telling Haskell, “I’ll call you when I need you,” and it happily waits around until the time is right.
 
 The Infinite List of Possibilities 🌌
@@ -269,7 +269,7 @@ firstFive :: [Int]
 firstFive = take 5 infiniteList
 Infinite lists? You bet! Haskell handles them with ease, taking only what it needs when it needs it.
 
-7. Function Composition: Combining Powers 🧪🔬
+## 7. Function Composition: Combining Powers 🧪🔬
 In Haskell, you can compose multiple functions into one. It’s like creating an ultimate superhero team from individual heroes. 🦸‍♂️🦸‍♀️
 
 Example: The Power of Function Composition
