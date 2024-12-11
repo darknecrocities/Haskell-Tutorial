@@ -4,11 +4,10 @@
 ## 1. Introduction to Haskell and Variables 💡
 In Haskell, variables are immutable. Once assigned a value, it cannot be changed. Here's an example of a constant value for Pi:
 
-haskell
-Copy code
+```haskell
 piValue :: Float  -- Declare the type of piValue as Float
 piValue = 3.14159 -- Assign a value to piValue
-
+```
 main :: IO ()  -- IO action to perform side effects (output)
 main = do
     putStrLn ("Pi value is: " ++ show piValue)  -- Concatenate and print Pi value
