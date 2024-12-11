@@ -1,7 +1,7 @@
-Haskell Tutorial: From Beginner to Expert 🎓
-Welcome to the Haskell tutorial! 🚀 This guide will walk you through fundamental concepts in Haskell, from variables to advanced topics like Monads and Functors.
+## Haskell Tutorial: From Beginner to Expert 🎓
+## Welcome to the Haskell tutorial! 🚀 This guide will walk you through fundamental concepts in Haskell, from variables to advanced topics like Monads and Functors.
 
-1. Introduction to Haskell and Variables 💡
+## 1. Introduction to Haskell and Variables 💡
 In Haskell, variables are immutable. Once assigned a value, it cannot be changed. Here's an example of a constant value for Pi:
 
 haskell
@@ -12,7 +12,7 @@ piValue = 3.14159 -- Assign a value to piValue
 main :: IO ()  -- IO action to perform side effects (output)
 main = do
     putStrLn ("Pi value is: " ++ show piValue)  -- Concatenate and print Pi value
-2. Data Types and Type Classes 🔢
+## 2. Data Types and Type Classes 🔢
 Haskell has many built-in data types such as Int, Float, Char, Bool, and String. Type classes define operations on types that share common behavior.
 
 haskell
@@ -41,7 +41,7 @@ isEqual a b = a == b           -- Return true if a is equal to b
 
 showInt :: Int -> String       -- Convert an Int to String
 showInt x = show x             -- Convert the integer x to a string
-3. Recursion and Loops 🔄
+## 3. Recursion and Loops 🔄
 Recursion is the primary way to create loops in functional programming. Here's a simple example with factorials:
 
 haskell
