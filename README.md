@@ -285,3 +285,7 @@ With composition, your functions come together to create powerful results—just
 
 That's It—For Now! 🚀
 Haskell might seem tricky at first, but once you get the hang of these concepts, it’s like unlocking the secrets of a mystical world! Happy coding, and may your functions always return the right results! 🎉
+
+## Created 🛠️
+
+This Tutorial is Created by Arron Kian Parejas
